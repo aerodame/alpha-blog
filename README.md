@@ -24,3 +24,10 @@ Uploading SSH public key /home/nitrous/.ssh/id_rsa.pub... done
 
 ## Deploy now to Heroku
 git push heroku master
+
+## Oops... let's change the name
+```
+$ heroku rename alpha-blog-aerodame
+=> Renaming frozen-fjord-4034 to alpha-blog-aerodame... done
+=> https://alpha-blog-aerodame.herokuapp.com/ | https://git.heroku.com/alpha-blog-aerodame.git
+```
