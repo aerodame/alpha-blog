@@ -1,7 +1,4 @@
-##Notes
-This is the repo for the first RoR project application from the Udemy course.
-
-##Heroku Setup & Commands
+###Heroku Setup & Commands
 Install Heroku Toolbelt in Nitrous and check the version
 ```
 $ wget https://community.nitrous.io/docs/heroku-toolbelt
@@ -21,7 +18,7 @@ $ heroku keys:add
 => Would you like to upload it to Heroku? [Yn] Y
 => Uploading SSH public key /home/nitrous/.ssh/id_rsa.pub... done
 ```
-## Deploy now to Heroku
+### Deploy now to Heroku
 ```
 git push heroku master
 => Counting objects: 79, done.
@@ -35,7 +32,7 @@ git push heroku master
 => * [new branch]      master -> master
 ```
 
-## Oops... let's change the name
+###Oops... let's change the name
 ```
 $ heroku rename alpha-blog-aerodame
 => Renaming frozen-fjord-4034 to alpha-blog-aerodame... done
