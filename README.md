@@ -22,7 +22,18 @@ $ heroku keys:add
 => Uploading SSH public key /home/nitrous/.ssh/id_rsa.pub... done
 ```
 ## Deploy now to Heroku
+```
 git push heroku master
+=> Counting objects: 79, done.
+=> Compressing objects: 100% (69/69), done.
+=> Writing objects: 100% (79/79), 18.15 KiB | 0 bytes/s, done.
+=> Total 79 (delta 9), reused 0 (delta 0)
+=> remote: Compressing source files... done.
+=> remote: Building source:
+...
+=> To https://git.heroku.com/frozen-fjord-4034.git
+=> * [new branch]      master -> master
+```
 
 ## Oops... let's change the name
 ```
