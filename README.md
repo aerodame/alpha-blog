@@ -32,9 +32,43 @@ git push heroku master
 => * [new branch]      master -> master
 ```
 
-###Oops... let's change the name
+###Let's change the name
 ```
 $ heroku rename alpha-blog-aerodame
 => Renaming frozen-fjord-4034 to alpha-blog-aerodame... done
 => https://alpha-blog-aerodame.herokuapp.com/ | https://git.heroku.com/alpha-blog-aerodame.git
+```
+
+###Migrations, rollbacks and additions
+There are a couple of paths here when creating tables, atrributes(columns), and edits.  First way is to use ```rake generate migration create<tablename>``` and then the next would be to use ```rake generate add```
+The first method:
+```$ rake generate migration create_articles```
+=> creates a migration file : <datetime>_create_articles.rb
+
+The resulting migration file is:
+```
+class CreateArticles < ActiveRecord::Migration
+  def change
+    create_table :articles do |t|
+      t.string :title
+    end
+  end
+end
+
+$ rake db:migrate
+```
+
+Oops... we forgot to add our description column to the table.  So we can rollback the migration and re-enter the column and regenerate.
+
+```
+$ rake db:roolback
+
+class CreateArticles < ActiveRecord::Migration
+  def change
+    create_table :articles do |t|
+      t.string :title
+      t.text :description
+    end
+  end
+end
 ```
