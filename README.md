@@ -61,7 +61,7 @@ $ rake db:migrate
 Oops... we forgot to add our description column to the table.  So we can rollback the migration and re-enter the column and regenerate.
 
 ```
-$ rake db:roolback
+$ rake db:rollback
 
 class CreateArticles < ActiveRecord::Migration
   def change
