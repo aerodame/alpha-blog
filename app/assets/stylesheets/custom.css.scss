@@ -35,12 +35,17 @@ $navbar-default-bg: black;
   font-weight: bold;
 }
 
-.btn-xlarge {
+.jumbotron .btn-xlarge {
 font-size: 3.5em;
 color: black;
 background-color: #d1a67a;
 }
 
+.jumbotron .btn-xlarge:hover {
+font-size: 3.5em;
+color: red;
+background-color: #d1a67a;
+}
 
 .footer {
   margin-top: 45px;
